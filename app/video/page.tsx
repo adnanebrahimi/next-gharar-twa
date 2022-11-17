@@ -5,7 +5,6 @@ export default function VideoPage({
 }: {
   searchParams: { roomAddress: string };
 }) {
-  console.log("ADDRESS", searchParams.roomAddress);
   return searchParams.roomAddress ? (
     <Gharar redirectTo={"/"} roomAddress={searchParams.roomAddress}></Gharar>
   ) : (

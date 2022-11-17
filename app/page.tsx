@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 
 export default function Page() {
   const router = useRouter();
-  const [roomAddress, setRoomAddress] = useState<string>();
   const onFormSubmit = async (event: any) => {
     event.preventDefault();
     // Get data from the form.
