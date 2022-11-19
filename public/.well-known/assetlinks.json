@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.vercel.next_gharar_twa.twa",
+                     "sha256_cert_fingerprints": ["81:10:4D:73:04:5B:29:21:16:66:00:18:17:0D:F6:FF:33:1E:E1:89:3D:1C:27:BC:67:BF:09:68:8E:FB:27:8D"] }
+      }
+]
