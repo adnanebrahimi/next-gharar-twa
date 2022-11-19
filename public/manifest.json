@@ -2,6 +2,30 @@
   "name": "Next Gharar TWA",
   "description": "Sample TWA",
   "short_name": "Gharar TWA",
+  "shortcuts" : [
+    {
+      "name": "Create/Enter Room",
+      "url": "/",
+      "description": "Form for Create or Enter in a Room"
+    }
+   
+  ],
+  "screenshots" : [
+    {
+      "src": "/screenshots/home1.png",
+      "sizes": "1920x892",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Homescreen Landscape"
+    },
+    {
+      "src": "/screenshots/home2.png",
+      "sizes": "437x775",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Homescreen Portrate"
+    }
+  ],
   "icons": [
     {
       "src": "icons/windows11/SmallTile.scale-100.png",
@@ -404,34 +428,81 @@
       "type": "image/png"
     },
     {
-      "src": "icons/android/android-launchericon-512-512.png",
+      "src": "icons/android/android-launchericon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icons/android/android-launchericon-192-192.png",
+      "src": "icons/android/android-launchericon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/android/android-launchericon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icons/android/android-launchericon-144-144.png",
+      "src": "icons/android/android-launchericon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/android/android-launchericon-144x144.png",
       "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icons/android/android-launchericon-96-96.png",
+      "src": "icons/android/android-launchericon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/android/android-launchericon-96x96.png",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icons/android/android-launchericon-72-72.png",
+      "src": "icons/android/android-launchericon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/android/android-launchericon-72x72.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "icons/android/android-launchericon-48-48.png",
+      "src": "icons/android/android-launchericon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/android/android-launchericon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/android/android-launchericon-48x48.png",
       "sizes": "48x48",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/android/android-launchericon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "icons/ios/16.png",
