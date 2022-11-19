@@ -1,8 +1,7 @@
-"use client"
 import {useSearchParams} from "next/navigation";
 import Gharar from "../../components/gharar/gharar.component";
 
-export default function VideoPage() {
+export default function Video() {
   const searchParams = useSearchParams();
   const roomAddress = searchParams.get('roomAddress');
   return roomAddress ? (

@@ -1,7 +1,5 @@
-"use client";
-
 import { JitsiMeeting } from "@jitsi/react-sdk";
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/router'
 
 export default function Gharar({
   redirectTo,
