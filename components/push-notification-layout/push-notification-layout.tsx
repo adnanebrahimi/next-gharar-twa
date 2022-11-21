@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getMessaging, onMessage } from "firebase/messaging";
 import { firebaseCloudMessaging } from "../../util/firebase";
 import { ToastContainer, toast } from "react-toastify";
@@ -10,8 +10,9 @@ export default function PushNotificationLayout({
   children: any;
 }) {
   const router = useRouter();
+  const [token, setToken] = useState<string>("");
   useEffect(() => {
-    setToken();
+    setTk();
 
     // Event listener that listens for the push notification event in the background
     if ("serviceWorker" in navigator) {
@@ -21,10 +22,11 @@ export default function PushNotificationLayout({
     }
 
     // Calls the getMessage() function if the token is there
-    async function setToken() {
+    async function setTk() {
       try {
-        const token = await firebaseCloudMessaging.init();
-        if (token) {
+        const tk = await firebaseCloudMessaging.init();
+        if (tk !== undefined && tk !== null) {
+          setToken(JSON.stringify(tk));
           console.log("token", token);
           getMessage();
         }
@@ -62,6 +64,7 @@ export default function PushNotificationLayout({
 
   return (
     <>
+      <code>{token}</code>
       <ToastContainer />
       {children}
     </>
