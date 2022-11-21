@@ -64,7 +64,7 @@ export default function PushNotificationLayout({
 
   return (
     <>
-      <code>{token}</code>
+      <p style={{ overflowWrap: "break-word", textAlign: 'center', width: '100%' }}>{token}</p>
       <ToastContainer />
       {children}
     </>
